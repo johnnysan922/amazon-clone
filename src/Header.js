@@ -14,6 +14,7 @@ function Header() {
             {/* {TEXTBAR} */}
             <input className='header_searchInput' type='text'/>
             {/* {LOGO} */}
+            <SearchIcon className='header_searchIcon' />
         </div>
 
         {/* CHILDREN COMPONENT*/}

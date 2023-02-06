@@ -1,19 +1,19 @@
 # A clone of the Amazon website
 
-Created a clone of Amazon to learn fullstack web developement skills
+Created a clone of Amazon with a few tweaks to learn fullstack web developement skills
 
 ## Utilized
 
-React and node
-Firebase
-Material-UI (
+- React and node
+- Firebase
+- Material-UI (
     npm install npm install @mui/material @emotion/react @emotion/styled
     npm install @mui/icons-material @mui/material @emotion/styled @emotion/react
 
 ## Things I learned
 
-Learned how to use firebase and hook it up to my project
-Learned about BEM format. (capitalized files are components)
+- Learned how to use firebase and hook it up to my project
+- Learned about BEM format. (capitalized files are components)
 
 # Getting Started with Create React App
 
