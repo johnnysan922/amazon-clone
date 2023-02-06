@@ -1,3 +1,7 @@
+# A clone of the Amazon website
+
+Utilized this project to learn fullstack web developement skills
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
