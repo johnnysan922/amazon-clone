@@ -1,6 +1,16 @@
 # A clone of the Amazon website
 
-Utilized this project to learn fullstack web developement skills
+Created a clone of Amazon to learn fullstack web developement skills
+
+## Utilized
+
+React and node
+Firebase
+
+## Things I learned
+
+Learned how to use firebase
+Learned about BEM format. (capitalized files are components)
 
 # Getting Started with Create React App
 
