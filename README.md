@@ -6,10 +6,11 @@ Created a clone of Amazon to learn fullstack web developement skills
 
 React and node
 Firebase
+Material-UI (npm install @material-ui/core)
 
 ## Things I learned
 
-Learned how to use firebase
+Learned how to use firebase and hook it up to my project
 Learned about BEM format. (capitalized files are components)
 
 # Getting Started with Create React App
