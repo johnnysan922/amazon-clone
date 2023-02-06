@@ -6,7 +6,9 @@ Created a clone of Amazon to learn fullstack web developement skills
 
 React and node
 Firebase
-Material-UI (npm install @material-ui/core)
+Material-UI (
+    npm install npm install @mui/material @emotion/react @emotion/styled
+    npm install @mui/icons-material @mui/material @emotion/styled @emotion/react
 
 ## Things I learned
 
