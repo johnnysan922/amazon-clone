@@ -12,7 +12,7 @@
     width: 100px;
     object-fit: contain;
     margin: 0 18px;
-    margin-top: 10px;
+    margin-top: 18px;
 }
 
 .header_search{
@@ -28,8 +28,42 @@
     border: none;
     width: 100%;
 }
+
 .header_searchIcon{
     padding: 5px;
     height: 22px;
     background-color: darkgoldenrod;
+}
+
+.header_optionLine1{
+    font-size: 10px;
+}
+
+.header_optionLine2{
+    font-size: 13px;
+    font-weight: 800;
+}
+
+.header_optionBasket{
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.header_basketCount{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.header_nav{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.header_option{
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: white;
 }
