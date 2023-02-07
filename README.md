@@ -5,6 +5,8 @@ Created a clone of Amazon with a few tweaks to learn fullstack web development s
 ## Utilized
 
 - React and node
+  - npm i react-router-dom
+  - npm install react-currency-format --save --force
 - CCS
 - Firebase
 - Material-UI (
@@ -23,6 +25,7 @@ Created a clone of Amazon with a few tweaks to learn fullstack web development s
             <Component2 />
             </>
           }/>
+- How to insert links into div's or img's using <Link to='/'> </Link>
 - Learned how to use firebase and hook it up to my project
 - Learned about BEM format. (capitalized files are components)
 - How to efficiently inspect elements to debug and test how different properties would look
