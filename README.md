@@ -9,6 +9,8 @@ Created a clone of Amazon with a few tweaks to learn fullstack web development s
   - `npm install react-currency-format --save --force`
 - CCS
 - Firebase
+  - `npm install -g firebase-tools`
+  - `npm i firebase`
 - Material-UI (
     - `npm install npm install @mui/material @emotion/react @emotion/styled`
     - `npm install @mui/icons-material @mui/material @emotion/styled @emotion/react`
