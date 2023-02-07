@@ -6,17 +6,20 @@ function Home() {
   return (
     <div className='home'>
       <div className='home_container'>
-        <img className='home_image' src='	https://images-assets.nasa.gov/image/PIA15985/PIA15985~medium.jpg' alts="" />
+        <img className='home_image' src='https://wallpapers.com/images/featured/npcp6jc782ixp9zs.jpg' alts="" />
 
         <div className='home_row'>
           {/* EXAMPLE TO SHOW HOW TO PASS 'prop's INTO A COMPONENT*/}
           <Product 
           id={111111} 
-          title="Gaming PC" 
+          title="Gaming PC bundle (mouse and keyboard included)" 
           price={1599.99} 
           image='https://m.media-amazon.com/images/I/819XYUimTuL.jpg' 
           rating={5} 
           />
+          <Product id={111119} title="SONY Playstation 5 (controller included)" price={599.99} image='https://media.gamestop.com/i/gamestop/11108140/Sony-PlayStation-5-Console?$pdp2x$$&fmt=webp' rating={4} 
+          />
+          	
         </div>
 
         <div className='home_row'>
