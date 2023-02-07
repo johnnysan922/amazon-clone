@@ -5,26 +5,26 @@ Created a clone of Amazon with a few tweaks to learn fullstack web development s
 ## Utilized
 
 - React and node
-  - npm i react-router-dom
-  - npm install react-currency-format --save --force
+  - `npm i react-router-dom`
+  - `npm install react-currency-format --save --force`
 - CCS
 - Firebase
 - Material-UI (
-    - npm install npm install @mui/material @emotion/react @emotion/styled
-    - npm install @mui/icons-material @mui/material @emotion/styled @emotion/react
+    - `npm install npm install @mui/material @emotion/react @emotion/styled`
+    - `npm install @mui/icons-material @mui/material @emotion/styled @emotion/react`
 
 ## Things I learned
 
 - How to apply styling to components using CSS
 - How to use 'prop's to making reusing code easier
 - How to use React router and routes
-  - <Router>   </Router>
-  - <Route path='/' element={
+  - `<Router>  </Router>`
+  - `<Route path='/' element={
             <>
             <Component1 />
             <Component2 />
             </>
-          }/>
+          }/>`
 - How to insert links into div's or img's using <Link to='/'> </Link>
 - Learned how to use firebase and hook it up to my project
 - Learned about BEM format. (capitalized files are components)
