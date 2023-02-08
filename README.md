@@ -1,4 +1,4 @@
-# A clone of the Amazon website
+# A clone of the Amazon website (https://clone-1f7fc.web.app)
 
 Created a clone of Amazon with a few tweaks to learn fullstack web development skills
 
