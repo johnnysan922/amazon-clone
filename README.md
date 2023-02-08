@@ -2,8 +2,6 @@
 
 Created a clone of Amazon with a few tweaks to learn fullstack web development skills.
 
-## Features
-
 ## Utilized
 
 - React and node
