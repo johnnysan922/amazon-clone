@@ -27,7 +27,7 @@ function Header() {
         {/* SEARCH BAR COMPONENT*/}
         <div className="header_search">
             {/* {TEXTBAR} */}
-            <input className='header_searchInput' type='text'/>
+            <input className='header_searchInput' type='text' defaultValue={'Cloned by: Johnny Sanchez'} />
             {/* {LOGO} */}
             <SearchIcon className='header_searchIcon' />
         </div>
