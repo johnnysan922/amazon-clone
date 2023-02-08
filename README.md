@@ -47,7 +47,7 @@ Created a clone of Amazon with a few tweaks to learn fullstack web development s
 - Learned how to use firebase and hook it up to my project
 - Learned about BEM format. (capitalized files are components)
 - How to efficiently inspect elements to debug and test how different properties would look
-- How to impelement user login/authorization using Firebase
+- How to implement user login/authorization using Firebase
 - How to deploy my project to Firebase for others to interact with it!
 
 # Getting Started with Create React App
