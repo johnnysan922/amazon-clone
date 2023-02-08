@@ -17,6 +17,7 @@ Created a clone of Amazon with a few tweaks to learn fullstack web development s
 
 ## Things I learned
 
+- How to utilize git/github using vsCode to efficiently push/pull code from repositories
 - How to apply styling to components using CSS
 - How to use 'prop's to making reusing code easier
 - How to use React router and routes
