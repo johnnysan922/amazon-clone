@@ -11,6 +11,13 @@ Created a clone of Amazon with a few tweaks to learn fullstack web development s
 - Firebase
   - `npm install -g firebase-tools`
   - `npm i firebase`
+  - `firebase login`
+  - `firebase init`
+    - Select 'Hosting: Configure files for Firebase Hosting and (optionally) set up GitHub Action Deploys'
+    - Select 'Use an existing project'
+    - Select the desired project (This is the project created in the Firebase site)
+    - Type and enter 'build' when prompted: `What do you want to use as your public directory` (IMPORTANT for react apps)
+    - Type and enter 'y' when prompted: `Configure as single-app page?`
 - Material-UI (
     - `npm install npm install @mui/material @emotion/react @emotion/styled`
     - `npm install @mui/icons-material @mui/material @emotion/styled @emotion/react`
@@ -33,7 +40,7 @@ Created a clone of Amazon with a few tweaks to learn fullstack web development s
 - Learned about BEM format. (capitalized files are components)
 - How to efficiently inspect elements to debug and test how different properties would look
 - How to impelement user login/authorization using Firebase
-- How to deploy my project online for others to interact with it!
+- How to deploy my project to Firebase for others to interact with it!
 
 # Getting Started with Create React App
 
