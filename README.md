@@ -18,6 +18,9 @@ Created a clone of Amazon with a few tweaks to learn fullstack web development s
     - Select the desired project (This is the project created in the Firebase site)
     - Type and enter 'build' when prompted: `What do you want to use as your public directory` (IMPORTANT for react apps)
     - Type and enter 'y' when prompted: `Configure as single-app page?`
+  - To deploy and redeploy project, use the following commands:
+    - `npm run build`
+    - `firebase deploy`
 - Material-UI (
     - `npm install npm install @mui/material @emotion/react @emotion/styled`
     - `npm install @mui/icons-material @mui/material @emotion/styled @emotion/react`
