@@ -26,6 +26,7 @@ Created a clone of Amazon with a few tweaks to learn fullstack web development s
 - Material-UI (
     - `npm install npm install @mui/material @emotion/react @emotion/styled`
     - `npm install @mui/icons-material @mui/material @emotion/styled @emotion/react`
+- Stripe (for payment processing)
 
 ## Things I learned
 
@@ -40,7 +41,7 @@ Created a clone of Amazon with a few tweaks to learn fullstack web development s
             <Component2 />
             </>
           }/>`
-- How to insert links into div's or img's using <Link to='/'> </Link>
+- How to insert links into div's or img's using `<Link to='/'> </Link>`
 - Learned how to use firebase and hook it up to my project
 - Learned about BEM format. (capitalized files are components)
 - How to efficiently inspect elements to debug and test how different properties would look
