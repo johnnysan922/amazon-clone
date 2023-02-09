@@ -27,7 +27,7 @@ function Header() {
         {/* SEARCH BAR COMPONENT*/}
         <div className="header_search">
             {/* {TEXTBAR} */}
-            <input className='header_searchInput' type='text' defaultValue={'Cloned by: Johnny Sanchez'} />
+            <input className='header_searchInput' type='text' defaultValue={'Created by: Johnny Sanchez'} />
             {/* {LOGO} */}
             <SearchIcon className='header_searchIcon' />
         </div>
@@ -41,10 +41,13 @@ function Header() {
                 </div>
             </Link>
             
-            <div className='header_option'>
-                <span className='header_optionLine1'>Returns</span>
-                <span className='header_optionLine2'>& Orders</span>
-            </div>
+                
+            <Link to='/orders'>
+                <div className='header_option'>
+                    <span className='header_optionLine1'>Returns</span>
+                    <span className='header_optionLine2'>& Orders</span>
+                </div>
+            </Link>
 
             <div className='header_option'>
                 <span className='header_optionLine1'>Your</span>
