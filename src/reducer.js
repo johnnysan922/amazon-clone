@@ -11,8 +11,8 @@ const reducer = (state, action) => {
     switch(action.type) {
         case 'ADD_TO_BASKET':
             return{
-                ...state,
-                basket: [...state.basket, action.item],
+                ...state,   //keeps previous state
+                basket: [...state.basket, action.item],  //adds item into basket
             };
 
         case 'REMOVE_FROM_BASKET':
@@ -37,6 +37,12 @@ const reducer = (state, action) => {
             return{
                 ...state,
                 user: action.user
+            }
+        
+        case 'EMPTY_BASKET':
+            return{
+                ...state,
+                basket: []      //empties basket
             }
         
         default:
