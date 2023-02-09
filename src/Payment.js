@@ -1,12 +1,13 @@
 import React, {useState, useEffect} from 'react'
 import './Payment.css'
 import CheckoutProduct from './CheckoutProduct'
+import CurrencyFormat from 'react-currency-format'
 import { useStateValue } from './StateProvider'
 import { Link, useNavigate } from 'react-router-dom'
 import { useStripe, useElements, CardElement } from '@stripe/react-stripe-js'
-import CurrencyFormat from 'react-currency-format'
 import { getBasketTotal } from './reducer'
 import axios from './axios'
+import { db } from './firebase'
 
 function Payment() {
     const [{ basket, user }, dispatch] = useStateValue();
@@ -28,14 +29,17 @@ function Payment() {
         const getClientSecret = async () => {
             const response = await axios({
                 method:'post',
-                //Stripe expects the total in currencies subunits
                 url:`/payments/create?total=${getBasketTotal(basket) * 100}`
+                //Stripe expects the total in currencies subunits
             })
             setClientSecret(response.data.clientSecret)
         }
         getClientSecret();
     }, [basket])
 
+    console.log('The secret is >>>', clientSecret)
+
+    // CUSTOMER PURCHASES BASKET (reuse-able)
     const handleSubmit = async (event) => {
         //do all fancy stripe stuff
         event.preventDefault()
@@ -48,13 +52,32 @@ function Payment() {
             }
         }).then(({paymentIntent}) => {
             //paymentIntent == payment confirmation
+
+            // push orders into firestone database (THIS IS ALL THE CODE)
+            db
+            .collection('users')
+            .doc(user?.uid)     // `user.uid` is different from `user.id`
+            .collection('orders')
+            .doc(paymentIntent.id)
+            .set({
+                basket: basket,
+                amount: paymentIntent.amount,
+                created: paymentIntent.created
+            })
+            ////////////////////////////////////////////////////
+             
             setSucceeded(true);
             setError(null);
             setProcessing(false);
 
+            dispatch({
+                type: 'EMPTY_BASKET'
+            })
+
             navigate('/orders', { replace: true })
         })
     }
+
     const handleChange = event => {
         setDisabled(event.empty);    //if event is empty, buttons is disabled
         setError(event.error? event.error.message : ""); //show error if any
@@ -106,7 +129,7 @@ function Payment() {
                     <h3>Payment method</h3>
                 </div>
 
-                <div className='payment_detail'>
+                <div className='payment_details'>
                     {/* STRIPE */}
                     <form onSubmit={handleSubmit}>
 
