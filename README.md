@@ -27,7 +27,7 @@ Created a clone of Amazon with a few tweaks to learn fullstack web development s
     - To **deploy frontend** ONLY, use the following command:
       - `npm run build`
       - `firebase deploy --only hosting`
-    - To **deploy Firebase backend (cloud functions)** ONLY, use the following command:
+    - To **deploy backend (Firebase cloud functions)** ONLY, use the following command:
       - `firebase deploy --only functions`
   - Emulation commands:
       - `firebase emulators:start`
