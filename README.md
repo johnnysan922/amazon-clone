@@ -9,19 +9,19 @@ Created a clone of Amazon with a few tweaks to learn fullstack web development s
   - `npm install react-currency-format --save --force`
 - CCS
 - Firebase
-  - Firestore (real-time database)
-  - Commands used:
+  - Commands:
     - `npm install -g firebase-tools`
     - `npm i firebase`
     - `firebase login`
+  - Firestore (real-time database)
   - Deployment commands:
     - `firebase init`
-      - Select 'Hosting: Configure files for Firebase Hosting and (optionally) set up GitHub Action Deploys'
-      - Select `Use an existing project`
+      - Select: `Hosting: Configure files for Firebase Hosting and (optionally) set up GitHub Action Deploys`
+      - Select: `Use an existing project`
       - Select the desired project (This is the project created in the Firebase site)
-      - Type and enter 'build' when prompted: `What do you want to use as your public directory` (IMPORTANT for react apps)
-      - Type and enter 'y' when prompted: `Configure as single-app page?`
-    - To deploy and redeploy project, use the following commands:
+      - Type and enter `build` when prompted: `What do you want to use as your public directory` (IMPORTANT for react apps)
+      - Type and enter `y` when prompted: `Configure as single-app page?`
+    - To **deploy** and **redeploy** project, use the following commands:
       - `npm run build`
       - `firebase deploy`
   - Cloud function commands:
@@ -38,6 +38,23 @@ Created a clone of Amazon with a few tweaks to learn fullstack web development s
 - Stripe (for payment processing)
   - `npm i @stripe/stripe-js`
   - `npm i @stripe/react-stripe-js`
+
+### **Front-end** dependencies
+
+- `npm i react-router-dom`
+- `npm install react-currency-format --save --force`
+- `npm install npm install @mui/material @emotion/react @emotion/styled`
+- `npm install @mui/icons-material @mui/material @emotion/styled @emotion/react`
+- `npm install -g firebase-tools`
+- `npm i firebase`
+- `npm i axios`
+- `npm i @stripe/stripe-js`
+- `npm i @stripe/react-stripe-js`
+
+### **Back-end** dependencies
+
+- `npm i express`
+
 
 ## Things I learned
 
