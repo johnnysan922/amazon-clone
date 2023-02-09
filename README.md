@@ -21,9 +21,16 @@ Created a clone of Amazon with a few tweaks to learn fullstack web development s
       - Select the desired project (This is the project created in the Firebase site)
       - Type and enter `build` when prompted: `What do you want to use as your public directory` (IMPORTANT for react apps)
       - Type and enter `y` when prompted: `Configure as single-app page?`
-    - To **deploy** and **redeploy** project, use the following commands:
+    - To **deploy** and **redeploy** project using **Firebase**, use the following commands:
       - `npm run build`
       - `firebase deploy`
+    - To **deploy frontend** ONLY, use the following command:
+      - `npm run build`
+      - `firebase deploy --only hosting`
+    - To **deploy Firebase backend (cloud functions)** ONLY, use the following command:
+      - `firebase deploy --only functions`
+  - Emulation commands:
+      - `firebase emulators:start`
   - Cloud function commands:
     - `firebase init`
         - Select `Functions: Configure a Cloud Functions directory and its files`
@@ -39,7 +46,7 @@ Created a clone of Amazon with a few tweaks to learn fullstack web development s
   - `npm i @stripe/stripe-js`
   - `npm i @stripe/react-stripe-js`
 
-### **Front-end** dependencies
+### **Front-end** dependencies (\src)
 
 - `npm i react-router-dom`
 - `npm install react-currency-format --save --force`
@@ -50,10 +57,13 @@ Created a clone of Amazon with a few tweaks to learn fullstack web development s
 - `npm i axios`
 - `npm i @stripe/stripe-js`
 - `npm i @stripe/react-stripe-js`
+- `npm i moment`
 
-### **Back-end** dependencies
+### **Back-end** dependencies (\functions)
 
 - `npm i express`
+- `npm i cors`
+- `npm i stripe`
 
 
 ## Things I learned
@@ -76,6 +86,8 @@ Created a clone of Amazon with a few tweaks to learn fullstack web development s
 - How to implement user login/authorization using Firebase
 - How to hide private/secret api keys using `git ignore`
 - How to deploy my project to Firebase for others to interact with it!
+- How to emulate a build
+- How to set up an API and utilize it to send data
 
 # Getting Started with Create React App
 
