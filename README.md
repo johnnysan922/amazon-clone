@@ -27,6 +27,8 @@ Created a clone of Amazon with a few tweaks to learn fullstack web development s
     - `npm install npm install @mui/material @emotion/react @emotion/styled`
     - `npm install @mui/icons-material @mui/material @emotion/styled @emotion/react`
 - Stripe (for payment processing)
+  - `npm i @stripe/stripe-js`
+  - `npm i @stripe/react-stripe-js`
 
 ## Things I learned
 
@@ -46,6 +48,7 @@ Created a clone of Amazon with a few tweaks to learn fullstack web development s
 - Learned about BEM format. (capitalized files are components)
 - How to efficiently inspect elements to debug and test how different properties would look
 - How to implement user login/authorization using Firebase
+- How to hide private/secret api keys using `git ignore`
 - How to deploy my project to Firebase for others to interact with it!
 
 # Getting Started with Create React App
