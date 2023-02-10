@@ -89,6 +89,20 @@ Created a clone of Amazon with a few tweaks to learn fullstack web development s
 - How to emulate a build
 - How to set up an API and utilize it to send data
 
+## After Deployment (cloud functions permission)
+
+After deployment, the payment processing feature was not working. This was because the API request permissions were private. To fix this:
+- Go the Google Cloud Console(Not Firebase Console) -> Search For Cloud Functions to see the list of functions
+- Click the checkbox next to the function to which you want to grant access.
+- Click Permissions at the top of the screen. The Permissions panel opens.
+- Click Add principal.
+- In the New principals field, type allUsers.
+- Select the role Cloud Functions > Cloud Functions Invoker from the
+- Select a role drop-down menu.
+- Click Save.
+
+Now anyone using the application can use the Stripe payment processing feature!
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
