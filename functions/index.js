@@ -19,12 +19,14 @@ app.get('/', (request, response) => response.status(200).send('hello world'));
 
 app.post('/payments/create', async (request, response) => {
     const total = request.query.total;
-    console.log('Payment Request Received! for this ammount (last two digits are cents)>>> ', total);
+
+    console.log('Payment Request Received! for this amount (last two digits are cents)>>> ', total);
 
     const paymentIntent = await stripe.paymentIntents.create({
         amount: total,
-        currency: "usd"   //change to any currency country code you want
+        currency: "usd",  //change to any currency country code you want
     });
+
     //OK response - created
     response.status(201).send({
         clientSecret: paymentIntent.client_secret,
@@ -34,5 +36,5 @@ app.post('/payments/create', async (request, response) => {
 // Listen command
 exports.api = functions.https.onRequest(app);
 
-// API ENDPOINT(obtained after running `firebase emulators:start`): 
+// EXAMPLE API ENDPOINT(obtained after running `firebase emulators:start`): 
 // http://127.0.0.1:5001/clone-1f7fc/us-central1/api
