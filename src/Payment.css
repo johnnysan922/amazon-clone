@@ -22,6 +22,10 @@
     border-bottom: 1px solid lightgray;
 }
 
+.payment_section > .payment_title > h2{
+    font-size: small;
+}
+
 .payment_title{
     flex: 0.2;      /* 20% of container*/
 }

@@ -127,6 +127,7 @@ function Payment() {
 
                 <div className='payment_title'>
                     <h3>Payment method</h3>
+                    <h2>(Keep typing '42' for card details)</h2>
                 </div>
 
                 <div className='payment_details'>
