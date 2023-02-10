@@ -1,7 +1,7 @@
 const functions = require("firebase-functions");
 const express = require("express");
 const cors = require("cors");
-const stripe = require("stripe")('STRIPE SECRET KEY GOES HERE');
+const stripe = require("stripe")("STRIPE SECRET KEY GOES HERE");
 //  client secret^
 
 // API
@@ -10,17 +10,17 @@ const stripe = require("stripe")('STRIPE SECRET KEY GOES HERE');
 const app = express();
 
 // Middlewares
-app.use(cors({ origin: true }));
+app.use(cors({origin: true}));
 app.use(express.json());
 // sends data and passes it in json format
 
 // API routes
-app.get('/', (request, response) => response.status(200).send('hello world'));
+app.get("/", (request, response) => response.status(200).send('hello world'));
 
-app.post('/payments/create', async (request, response) => {
+app.post("/payments/create", async (request, response) => {
     const total = request.query.total;
 
-    console.log('Payment Request Received! for this amount (last two digits are cents)>>> ', total);
+    console.log("Payment Request Received! for this amount (last two digits are cents)>>> ", total);
 
     const paymentIntent = await stripe.paymentIntents.create({
         amount: total,
@@ -36,5 +36,5 @@ app.post('/payments/create', async (request, response) => {
 // Listen command
 exports.api = functions.https.onRequest(app);
 
-// EXAMPLE API ENDPOINT(obtained after running `firebase emulators:start`): 
+// EXAMPLE API ENDPOINT(obtained after running `firebase emulators:start`):
 // http://127.0.0.1:5001/clone-1f7fc/us-central1/api
