@@ -5,6 +5,7 @@ Created a clone of Amazon with a few tweaks to learn fullstack web development s
 ## Utilized
 
 - React and node
+  - `npx create-react-app` (creates react app template)
   - `npm i react-router-dom`
   - `npm install react-currency-format --save --force`
 - CCS
@@ -30,16 +31,16 @@ Created a clone of Amazon with a few tweaks to learn fullstack web development s
     - To **deploy backend (Firebase cloud functions)** ONLY, use the following command:
       - `firebase deploy --only functions`
   - Emulation commands:
-      - `firebase emulators:start`
+    - `firebase emulators:start`
   - Cloud function commands:
     - `firebase init`
-        - Select `Functions: Configure a Cloud Functions directory and its files`
-        - Selected `Javascript` when prompted: `What language would you like to use to write Cloud Functions?`
-        - Enter `y` when prompted: `Do you want to use ESLint to catch probable bugs and enforce style?`
-        - Enter `y` when prompted: `Do you want to install dependencies with npm now?`
+      - Select `Functions: Configure a Cloud Functions directory and its files`
+      - Selected `Javascript` when prompted: `What language would you like to use to write Cloud Functions?`
+      - Enter `y` when prompted: `Do you want to use ESLint to catch probable bugs and enforce style?`
+      - Enter `y` when prompted: `Do you want to install dependencies with npm now?`
 - Material-UI (
-    - `npm install npm install @mui/material @emotion/react @emotion/styled`
-    - `npm install @mui/icons-material @mui/material @emotion/styled @emotion/react`
+  - `npm install npm install @mui/material @emotion/react @emotion/styled`
+  - `npm install @mui/icons-material @mui/material @emotion/styled @emotion/react`
 - Axios
   - `npm i axios`
 - Stripe (for payment processing)
@@ -65,7 +66,6 @@ Created a clone of Amazon with a few tweaks to learn fullstack web development s
 - `npm i cors`
 - `npm i stripe`
 
-
 ## Things I learned
 
 - How to utilize git/github using vsCode to efficiently push/pull code from repositories
@@ -74,11 +74,11 @@ Created a clone of Amazon with a few tweaks to learn fullstack web development s
 - How to use React router and routes
   - `<Router>  </Router>`
   - `<Route path='/' element={
-            <>
-            <Component1 />
-            <Component2 />
-            </>
-          }/>`
+    <Link>
+    <Component1 />
+    <Component2 />
+    </>
+  }/>`
 - How to insert links into div's or img's using `<Link to='/'> </Link>`
 - Learned how to use firebase and hook it up to my project
 - Learned about BEM format. (capitalized files are components)
@@ -92,6 +92,7 @@ Created a clone of Amazon with a few tweaks to learn fullstack web development s
 ## After Deployment (cloud functions permission)
 
 After deployment, the payment processing feature was not working. This was because the API request permissions were private. To fix this:
+
 - Go the Google Cloud Console(Not Firebase Console) -> Search For Cloud Functions to see the list of functions
 - Click the checkbox next to the function to which you want to grant access.
 - Click Permissions at the top of the screen. The Permissions panel opens.
