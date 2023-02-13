@@ -5,6 +5,7 @@ Created a clone of Amazon with a few tweaks to learn fullstack web development s
 ## Utilized
 
 - React and node
+  - `npm install` (when testing on a new machine be sure to run this again)
   - `npx create-react-app` (creates react app template)
   - `npm i react-router-dom`
   - `npm install react-currency-format --save --force`
