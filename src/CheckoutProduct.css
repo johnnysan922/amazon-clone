@@ -4,6 +4,12 @@
     margin-bottom: 20px;
 }
 
+.checkoutProduct:hover{
+    transform: scale(1.01);
+    border: 1px solid;
+    border-color: gray;
+}
+
 .checkoutProduct_info {
     padding-left: 20px;
 }
@@ -13,6 +19,11 @@
     margin-top: 10px;
     border-color: #a88734 #9c7e31 #846a29;
     color: #111;
+}
+
+.checkoutProduct_info > button:hover{
+    transform: scale(1.01);
+    border: 1px solid;
 }
 
 .checkoutProduct_image{
