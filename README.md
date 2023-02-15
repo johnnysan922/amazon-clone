@@ -2,6 +2,31 @@
 
 Created a clone of Amazon with a few tweaks to learn fullstack web development skills. Users can create an account and login using their gmail and the password associated with that gmail. Users can also add/remove items to their basket and purchase(not real payment) those items.
 
+## Things I learned
+
+- How to utilize git/github using vsCode to efficiently push/pull code from repositories
+- How to apply styling to components using CSS
+- How to use 'prop's to making reusing code easier
+- How to use React router and routes
+  `<Router>  </Router>`
+  ```
+  <Route path='/' element={
+    <Link>
+    <Component1 />
+    <Component2 />
+    </>
+  }/>
+  ```
+- How to insert links into div's or img's using `<Link to='/'> </Link>`
+- Learned how to use firebase and hook it up to my project
+- Learned about BEM format. (capitalized files are components)
+- How to efficiently inspect elements to debug and test how different properties would look
+- How to implement user login/authorization using Firebase
+- How to hide private/secret api keys using `git ignore`
+- How to deploy my project to Firebase for others to interact with it!
+- How to emulate a build
+- How to set up an API and utilize it to send data
+
 ## Utilized
 
 - React and node
@@ -66,29 +91,6 @@ Created a clone of Amazon with a few tweaks to learn fullstack web development s
 - `npm i express`
 - `npm i cors`
 - `npm i stripe`
-
-## Things I learned
-
-- How to utilize git/github using vsCode to efficiently push/pull code from repositories
-- How to apply styling to components using CSS
-- How to use 'prop's to making reusing code easier
-- How to use React router and routes
-  - `<Router>  </Router>`
-  - `<Route path='/' element={
-    <Link>
-    <Component1 />
-    <Component2 />
-    </>
-  }/>`
-- How to insert links into div's or img's using `<Link to='/'> </Link>`
-- Learned how to use firebase and hook it up to my project
-- Learned about BEM format. (capitalized files are components)
-- How to efficiently inspect elements to debug and test how different properties would look
-- How to implement user login/authorization using Firebase
-- How to hide private/secret api keys using `git ignore`
-- How to deploy my project to Firebase for others to interact with it!
-- How to emulate a build
-- How to set up an API and utilize it to send data
 
 ## After Deployment (cloud functions permission)
 
