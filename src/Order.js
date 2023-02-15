@@ -23,6 +23,7 @@ function Order({order}) {
             />
         ))}
 
+        {/* TOTAL PRICE OF ITEMS */}
         <CurrencyFormat
             renderText={(value) =>(
                 <h3 className='order_total'>Order Total: {value}</h3>
