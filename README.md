@@ -32,7 +32,7 @@ Created a clone of Amazon with a few tweaks to learn fullstack web development s
 - React and node
   - `npm install` (when testing on a new machine be sure to run this again)
   - `npx create-react-app` (creates react app template)
-  - `npm i react-router-dom`  (for <route /> and <router />)
+  - `npm i react-router-dom`  (for `<route />` and `<router />`)
   - `npm install react-currency-format --save --force`
 - CCS
 - Firebase
