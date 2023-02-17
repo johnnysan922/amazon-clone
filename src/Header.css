@@ -50,6 +50,11 @@
     color: white;
 }
 
+.header_option:hover,
+.header_optionBasket:hover{
+    transform: scale(1.05);
+}
+
 .header_basketCount{
     margin-left: 10px;
     margin-right: 10px;

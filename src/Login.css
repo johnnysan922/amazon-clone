@@ -62,3 +62,8 @@
     margin-top: 10px;
     border-color: darkgray;
 }
+
+.login_signInButton:hover,
+.login_registerButton:hover{
+    border: 1px solid;
+}
