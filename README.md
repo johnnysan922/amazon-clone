@@ -19,7 +19,8 @@ Created a clone of Amazon with a few tweaks to learn fullstack web development s
   ```
 - How to insert links into div's or img's using `<Link to='/'> </Link>`
 - Learned how to use firebase and hook it up to my project
-- Learned about BEM format. (capitalized files are components)
+- Learned about ***BEM*** format. (Components should be capitalized)
+  - The reason for this because React might mistaken it for an HTML tag if its lowercase
 - How to efficiently inspect elements to debug and test how different properties would look
 - How to implement user login/authorization using Firebase
 - How to hide private/secret api keys using `git ignore`
@@ -32,7 +33,7 @@ Created a clone of Amazon with a few tweaks to learn fullstack web development s
 - React and node
   - `npm install` (when testing on a new machine be sure to run this again)
   - `npx create-react-app` (creates react app template)
-  - `npm i react-router-dom`
+  - `npm i react-router-dom`  (for `<route />` and `<router />`)
   - `npm install react-currency-format --save --force`
 - CCS
 - Firebase
