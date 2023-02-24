@@ -36,13 +36,16 @@ Created a clone of Amazon with a few tweaks to learn fullstack web development s
   - `npm i react-router-dom`  (for `<route />` and `<router />`)
   - `npm install react-currency-format --save --force`
 - CCS
+- Material-UI
+- Axios
+- Stripe (for payment processing)
 - Firebase
+  - Firestore (real-time database)
   - Commands:
     - `npm install -g firebase-tools`
     - `npm i firebase`
     - `firebase login`
-  - Firestore (real-time database)
-  - Deployment commands:
+  - **Deployment** commands:
     - `firebase init`
       - Select: `Hosting: Configure files for Firebase Hosting and (optionally) set up GitHub Action Deploys`
       - Select: `Use an existing project`
@@ -57,7 +60,7 @@ Created a clone of Amazon with a few tweaks to learn fullstack web development s
       - `firebase deploy --only hosting`
     - To **deploy backend (Firebase cloud functions)** ONLY, use the following command:
       - `firebase deploy --only functions`
-  - Emulation commands:
+  - **Emulation** commands:
     - `firebase emulators:start`
   - Cloud function commands:
     - `firebase init`
@@ -65,14 +68,6 @@ Created a clone of Amazon with a few tweaks to learn fullstack web development s
       - Selected `Javascript` when prompted: `What language would you like to use to write Cloud Functions?`
       - Enter `y` when prompted: `Do you want to use ESLint to catch probable bugs and enforce style?`
       - Enter `y` when prompted: `Do you want to install dependencies with npm now?`
-- Material-UI (
-  - `npm install npm install @mui/material @emotion/react @emotion/styled`
-  - `npm install @mui/icons-material @mui/material @emotion/styled @emotion/react`
-- Axios
-  - `npm i axios`
-- Stripe (for payment processing)
-  - `npm i @stripe/stripe-js`
-  - `npm i @stripe/react-stripe-js`
 
 ### **Front-end** dependencies (\src)
 
