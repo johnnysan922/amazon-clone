@@ -30,7 +30,11 @@
     color: #111;
 }
 
-.subtotal > button:hover{
+.subtotal > button:hover:enabled{
     transform: scale(1.01);
     border: 1px solid;
+}
+
+.subtotal > button:disabled{
+    opacity: 0.6;
 }
