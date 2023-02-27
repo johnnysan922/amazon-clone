@@ -50,7 +50,7 @@
     color: white;
 }
 
-.header_option:hover,
+.enabled:hover,
 .header_optionBasket:hover{
     transform: scale(1.05);
 }

@@ -35,7 +35,7 @@ function Header() {
         {/* CHILDREN COMPONENT*/}
         <div className='header_nav'>
             <Link to={!user && '/login'}>
-                <div className='header_option' onClick={handleAuthentication}>
+                <div className='header_option enabled' onClick={handleAuthentication}>
                     <span className='header_optionLine1'>Hello, {user ? user?.email.split("@")[0] : "Guest"}!</span>
                     <span className='header_optionLine2'>{user ? 'Sign Out' : 'Sign In'}</span>
                 </div>
@@ -43,7 +43,7 @@ function Header() {
             
                 
             <Link to='/orders'>
-                <div className='header_option'>
+                <div className='header_option enabled'>
                     <span className='header_optionLine1'>Returns</span>
                     <span className='header_optionLine2'>& Orders</span>
                 </div>
