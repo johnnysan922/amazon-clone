@@ -1,4 +1,4 @@
-# Amazon Clone (https://clone-1f7fc.web.app)
+# Amazon Clone
 
 Created a clone of Amazon with a few tweaks to learn fullstack web development skills. Users can create an account and login using their gmail and the password associated with that gmail. Users can also add/remove items to their basket and purchase(not real payment) those items.
 
