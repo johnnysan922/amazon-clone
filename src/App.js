@@ -44,9 +44,14 @@ function App() {
     //BEM (change "App" to "app")
     <Router>
       <div className="app">
-        {/* <Header />    RENDERS REGARDLESS OF ROUTE */}
-        {/* but Login Page doesnt need header so not applicable*/}
         <Routes>
+          {/* DEFAULT ROUTE*/}
+          <Route path='*' element={
+            <>
+            <Header />
+            <Home />
+            </>
+          }/>
           {/* LOGIN PAGE ROUTE */}
           <Route path='/login' element={
             <>
@@ -75,13 +80,6 @@ function App() {
             <>
             <Header />
             <Orders />
-            </>
-          }/>
-          {/* DEFAULT ROUTE*/}
-          <Route path='/' element={
-            <>
-            <Header />
-            <Home />
             </>
           }/>
         </Routes>

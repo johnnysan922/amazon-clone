@@ -35,6 +35,23 @@
     background-color: darkgoldenrod;
 }
 
+.header_nav{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.header_nav a{
+    text-decoration: none;
+}
+
+.header_option{
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: white;
+}
+
 .header_optionLine1{
     font-size: 10px;
 }
@@ -58,17 +75,4 @@
 .header_basketCount{
     margin-left: 10px;
     margin-right: 10px;
-}
-
-.header_nav{
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.header_option{
-    display: flex;
-    flex-direction: column;
-    margin-left: 10px;
-    margin-right: 10px;
-    color: white;
 }
